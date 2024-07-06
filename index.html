@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container p-3">
+        <h1 class="app title" id="header">To Do List</h1>
+        <div class="card">
+            <div class="card-header">
+                My List
+            </div>
+            <div class="card-body">
+                <form id="addTask">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-11">
+                         <input type="text" id="txtToDo" class="form-control" placeholder="Add a new to do">
+                        </div>
+                         <div class="col-lg-1">
+                            <button class="btn btn-primary float-left" type="submit" id="btnAdd">
+                                +
+                            </button>
+                        </div>
+                     </div>
+                </form>
+            </div>
+        </div>
+       
+        <div class="card mt-4">
+            
+                <div class="card-header ">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10" id="listOfDay">
+                            
+                        </div>  
+                        <div class="col-lg-2">
+                            <button class="btn btn-outline-danger float-right delete-all" type="submit">Delete All</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul id="listTODO" class="list-group">
+                    </ul>
+
+                </div>
+           
+        </div>
+    </div>
+    
+
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
